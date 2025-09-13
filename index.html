@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مینی‌اپ سریع ایتا</title>
+    
+    <!-- اتصال اسکریپت ایتا -->
+    <script src="https://developer.eitaa.com/eitaa-web-app.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="loading">در حال بارگذاری...</div>
+        
+        <div id="main-content" style="display: none;">
+            <header id="app-header">
+                <h1>مینی‌اپ سریع</h1>
+                <div id="user-info"></div>
+            </header>
+            
+            <main id="app-main">
+                <div class="feature-group">
+                    <h3>دکمه‌های اصلی</h3>
+                    <button id="main-button-toggle">نمایش/مخفی دکمه اصلی</button>
+                    <button id="back-button-toggle">نمایش/مخفی دکمه برگشت</button>
+                </div>
+                
+                <div class="feature-group">
+                    <h3>تعامل با کاربر</h3>
+                    <button id="alert-button">نمایش هشدار</button>
+                    <button id="confirm-button">نمایش تأیید</button>
+                    <button id="popup-button">نمایش پاپ‌آپ</button>
+                </div>
+                
+                <div class="feature-group">
+                    <h3>تنظیمات مینی‌اپ</h3>
+                    <button id="expand-button">گسترش مینی‌اپ</button>
+                    <button id="theme-button">تغییر رنگ هدر</button>
+                </div>
+                
+                <div class="feature-group">
+                    <h3>درخواست اطلاعات</h3>
+                    <button id="contact-button">درخواست شماره تماس</button>
+                    <button id="write-access-button">درخواست مجوز نوشتن</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

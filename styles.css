@@ -1,0 +1,80 @@
+:root {
+    --tg-theme-bg-color: #ffffff;
+    --tg-theme-text-color: #000000;
+    --tg-theme-hint-color: #999999;
+    --tg-theme-button-color: #2481cc;
+    --tg-theme-button-text-color: #ffffff;
+    --tg-theme-secondary-bg-color: #f1f1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+    line-height: 1.6;
+}
+
+#app {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: var(--tg-theme-hint-color);
+}
+
+#app-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--tg-theme-secondary-bg-color);
+    border-radius: 10px;
+}
+
+#user-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--tg-theme-hint-color);
+}
+
+.feature-group {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--tg-theme-secondary-bg-color);
+    border-radius: 10px;
+}
+
+.feature-group h3 {
+    margin-bottom: 15px;
+    color: var(--tg-theme-text-color);
+}
+
+button {
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
